@@ -1,0 +1,10 @@
+<?php
+session_start(); 
+/*$host="localhost";
+$user="root";
+$pass="";
+$db="sarthak";*/
+$host=$_SESSION['host'];
+$user=$_SESSION['user'];
+$pass=$_SESSION['password'];
+?>

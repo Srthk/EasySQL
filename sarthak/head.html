@@ -1,0 +1,203 @@
+<?php
+include('conn.php');
+$con=mysql_connect($host,$user,$pass);
+$z=NULL;
+if(isset($_GET['dbid']))
+$z=$_GET['dbid'];
+else $z="test";
+mysql_select_db($z);
+if(!$con) echo "<script>alert('Login Error: Wrong host, username or password');parent.location.href='login.php'</script>"
+?>
+
+<html>
+<head>
+
+<link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+<link rel="stylesheet" type="text/css" href="museofont.css">
+
+
+<style>
+@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+@import url(http://fonts.googleapis.com/css?family=Nova+Flat);
+@import url(http://fonts.googleapis.com/css?family=Cinzel);
+body { padding-top: 250px; 
+	   background-color: #e8f0f5;
+	}
+.navbar-brand {
+	margin-left: -0px;
+	padding: 0;
+
+}
+.navbar-brand a {
+	padding: 0;
+	color: #fff;
+	font-size: 100%;
+	margin-left: -0px;
+	font-weight: normal;
+	/*font-family: HelveticaLTStdLight,Arial,Helvetica,sans-serif;*/
+	font-family: 'Exo', sans-serif;
+	font-size: 50px;
+	text-shadow: 2px 2px black;
+
+}
+.navbar-brand a:hover {
+	text-decoration: none;
+	color:#f0bf00;
+ transition: color .15s linear;
+ -webkit-transition: color .15s linear;
+ -moz-transition: color .15s linear;
+}
+.navbar-brand a:focus {
+	outline: none;
+}
+.navbar-inverse{
+	background-repeat: repeat;
+	background-color: #0973B9;
+}
+#menu-main {
+	margin-top: 1.125em;
+}
+ul#menu-main > li > a {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 100%;
+	color: #fff;
+}
+ul#menu-main > li > a:hover {
+	background: #f0bf00;
+	padding: 9px 15px;
+}
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+	text-shadow: none;
+}
+#movers-row {
+	margin: -80px 0 0 200px;
+	top: 350px;
+}
+#movers-row div {
+	width: 25%;
+	float: left;
+}
+#movers-row div img {
+	float: right;
+}
+
+#container2 {
+  text-align: justify;
+  border: 0px solid black;
+  font-size: 30px; /* IE 9/10 don't like font-size: 0; */
+  min-width: 600px;
+  /*font-family: 'Cinzel', serif;*/
+  	font-family: Museo-500;
+
+}
+#container2 div {
+  width: 230px;
+  height: 230px;
+  text-align: center;
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 115px;
+  padding: 5px;
+  background-color: white;
+}
+#container2 div a:link {
+  color: #0973B9;
+  text-decoration: none;
+}
+#container2 div a:visited {
+  color: #0973B9;
+  text-decoration: none;
+}
+#container2 div a:hover {
+  color: #f0bf00;
+  text-decoration: none;
+}
+
+
+#container2 p {
+  width: 230px;
+  height: 300px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  	font-family: Museo-300;
+    text-align: center-left;
+}
+#container2 p a:link{
+  color: #fff;
+  width: 20px;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #0973B9;
+    padding: 5px 30px;
+}
+#container2 p a:visited{
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #0973B9;
+}
+#container2 p a:hover{
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #f0bf00;
+
+}
+#container2:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+
+</style>
+</head>
+<!--******************* Navbar *******************-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+ <div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <h1 class="navbar-brand"><a href="#top"><img src="logo_mysql.png" width="100" height="100">&nbsp;EasySQL</a></h1>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right" id="menu-main">
+      <li><a title="Adote" href="#adote"><b>Home</b></a></li>
+      <li><a title="Pets" href="#pets"><b>Tools</b></a></li>
+      <li><a title="Instituicoes" href="#instituicoes"><b>Help</b></a></li>
+      <li><a title="Contato" href="#contato"><b>About</b></a></li>
+    </ul>
+  </div>
+  
+  <!-- /.navbar-collapse -->
+</nav>
+</div>
+ <div class="container">
+
+<div id="container2">
+ <div></br><a href="project2.php"><img src="code4.png" width="125"></a></div>
+	<div></br><a href="db.php"><img src="data3.png" width="125"></a></div>
+	<div></br><a href="new.php"><img src="tables.png" width="125"></a></div>
+		<div></br><a href="tables2.php"><img src="addtable.png" width="125"></a></div>
+</div>
+<div id="container2">
+ <p><b></br>SQL Parser</b></a></br>For executing commands and queries in MySQL & displaying the respective output or error.</br></br><a href="project2.php">&nbsp;&nbsp;Enter&nbsp;&nbsp;</a></p>
+ <p><b></br>Database Editor</b></a></br>It contains operations related to databases - create, drop and show tables.</br></br><a href="db.php">&nbsp;&nbsp;Enter&nbsp;&nbsp;</a></p>
+ <p><b></br>Table Editor</b></br>It contains all table editing functions - drop, describe, rename, show/edit/delete and insert.</br></br><a href="new.php">&nbsp;&nbsp;Enter&nbsp;&nbsp;</a></p>
+  <p><b>Create Table</b></br>To create a new table in the selected database with adding values in table columns.</br></br><a href="tables2.php">&nbsp;&nbsp;Enter&nbsp;&nbsp;</a></p>
+</div>
+</div>
