@@ -1,4 +1,0 @@
-list of hex color codes:
-
-orange #F87431
-mustard f0bf00
