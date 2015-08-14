@@ -1,0 +1,249 @@
+@import url(fonts.css);
+
+body { padding-top: 150px; 
+	   background-color: black;
+	   font-size: 18px;
+	   font-family: serif;
+	}
+.navbar-brand {
+	margin-left: -0px;
+	padding-bottom: 10px;
+	color: #fff;
+
+}
+.navbar-brand a {
+	padding: 0;
+	color: #fff;
+	font-size: 100%;
+	margin-left: -0px;
+	font-weight: normal;
+	/*font-family: HelveticaLTStdLight,Arial,Helvetica,sans-serif;*/
+	font-family: 'Exo', sans-serif;
+	font-size: 50px;
+	text-shadow: 2px 2px black;
+
+}
+.navbar-brand a:hover {
+	text-decoration: none;
+	color:#f0bf00;
+ transition: color .15s linear;
+ -webkit-transition: color .15s linear;
+ -moz-transition: color .15s linear;
+}
+.navbar-brand a:focus {
+	outline: none;
+}
+.navbar-inverse{
+	background-repeat: repeat;
+	background-color: #004E96;
+	border-bottom: 0px;
+}
+#menu-main {
+	margin-top: 1.125em;
+	color: #fff;
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: right;
+}
+ul#menu-main > li > a {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 100%;
+	color: #fff;
+}
+ul#menu-main > li > a:hover {
+	background: #f0bf00;
+	padding: 9px 15px;
+}
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+	text-shadow: none;
+}
+.container3{
+background-repeat: repeat;
+background-color: #CE402C;
+width: 100%;
+}
+#container2 {
+  text-align: justify;
+  border: 0px solid black;
+  color: #fff;
+  font-size: 30px; /* IE 9/10 don't like font-size: 0; */
+  min-width: 600px;
+  /*font-family: 'Cinzel', serif;*/
+  	font-family: Museo-500;
+
+}
+#container2 div {
+  width: 230px;
+  height: 230px;
+  text-align: center;
+  display: inline-block;
+  border: 0px solid black;
+  border-radius: 115px;
+  padding: 5px;
+  background-color: white;
+}
+#container2 #txt {
+  width: auto;
+  height: auto;
+  text-align: justify;
+  display: inline-block;
+  border: 0px solid black;
+  border-radius: 0px;
+  background-color: transparent;
+  padding-top: 25px;
+  font-size: 21px;
+  line-height: 10%;
+
+}
+#container2 #txt2 {
+  width: auto;
+  height: auto;
+  text-align: justify;
+  display: inline-block;
+  border: 0px solid black;
+  border-radius: 0px;
+  background-color: transparent;
+  font-size: 21px;
+}
+
+#container2 div a:link {
+  color: #0973B9;
+  text-decoration: none;
+}
+#container2 div a:visited {
+  color: #0973B9;
+  text-decoration: none;
+}
+#container2 div a:hover {
+  color: #f0bf00;
+  text-decoration: none;
+}
+
+
+#container2 p {
+  width: 230px;
+ padding-bottom: 50px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  	font-family: Museo-300;
+    text-align: center-left;
+}
+#container2 p a:link{
+  color: #fff;
+  width: 20px;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #0973B9;
+    padding: 5px 30px;
+}
+#container2 p a:visited{
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #0973B9;
+}
+#container2 p a:hover{
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #f0bf00;
+
+}
+#container2:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+.header{
+	position: relative;
+	/*top: calc(50% - 35px);
+	left: calc(50% - 255px);*/
+	top: 0px;;
+	left: 0px;
+	z-index: 2;
+	font-family: Museo-500;
+	font-size: 32px;
+	text-align: left;
+	color: #fff;
+	border-bottom: 3px dotted #fff;
+	border-radius: 0px;
+	padding-bottom: 10px;
+
+}
+.header img{
+height: 85px;
+width: 85px;
+border: 0px solid black;
+border-radius: 40px;
+padding: 10px;
+background-color: white;
+}
+input[type=submit]{
+	width: 250px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 10px;
+	color: black;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+	
+}
+
+
+input[type=submit]:hover{
+	opacity: 0.8;
+}
+
+input[type=submit]:active{
+	opacity: 0.6;
+}
+.clip-circle{
+ background:url("../images/ss.png") no-repeat;
+  height:480px;
+  width:480px;
+  border-radius:50%;
+  overflow:hidden;
+  margin:auto;
+}
+.anchor{
+  display: block;
+  height: 170px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
+.login{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	color: #fff;
+	font-family: museo-300;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 10px;
+	z-index: 2;
+	text-align: center;
+	display: inline-block;
+}
+.login select{
+	width: 250px;
+	height: 30px;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: black;
+	background-color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
